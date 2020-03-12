@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -42,27 +43,50 @@ public class MainActivity extends AppCompatActivity {
                 ;
                 Toast.makeText(getApplicationContext(), "Cliquei no salvar!!!", Toast.LENGTH_SHORT).show();
                 break;
-        }switch (item.getItemId()) {
+        }
+        switch (item.getItemId()) {
             case R.id.mAlterar:
                 ;
                 Toast.makeText(getApplicationContext(), "Cliquei no alterar!!!", Toast.LENGTH_SHORT).show();
                 break;
-        }switch (item.getItemId()) {
+        }
+        switch (item.getItemId()) {
             case R.id.mExcluir:
                 ;
                 Toast.makeText(getApplicationContext(), "Cliquei no excluir!!!", Toast.LENGTH_SHORT).show();
                 break;
-        }switch (item.getItemId()) {
+        }
+        switch (item.getItemId()) {
             case R.id.mBuscar:
                 ;
                 Toast.makeText(getApplicationContext(), "Cliquei no buscar!!!", Toast.LENGTH_SHORT).show();
                 break;
-        }switch (item.getItemId()) {
+        }
+        switch (item.getItemId()) {
+            case R.id.mAbrir:
+                startActivity(new Intent(getApplicationContext(),SubMenu_Activity.class));
+
+                ;
+                Toast.makeText(getApplicationContext(), "Cliquei no abrir!!!", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        switch (item.getItemId()) {
             case R.id.mSair:
+
+                finish();
                 ;
                 Toast.makeText(getApplicationContext(), "Cliquei no sair!!!", Toast.LENGTH_SHORT).show();
                 break;
         }
+        switch (item.getItemId()) {
+            case R.id.mGrupo:
+                startActivity(new Intent(getApplicationContext(), GrupoMenuActivity.class));
+
+                ;
+                Toast.makeText(getApplicationContext(), "Cliquei no abrir!!!", Toast.LENGTH_SHORT).show();
+                break;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 }

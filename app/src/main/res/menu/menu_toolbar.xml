@@ -22,10 +22,21 @@
         android:icon="@drawable/ic_search"
         android:title="Buscar"
         app:showAsAction="ifRoom" />
-    -<item
+    <item
+        android:id="@+id/mAbrir"
+        android:icon="@drawable/ic_open"
+        android:title="Abrir"
+        app:showAsAction="ifRoom" />
+    -
+    <item
         android:id="@+id/mSair"
         android:icon="@drawable/ic_exit"
         android:title="Sair"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mGrupo"
+        android:icon="@drawable/ic_exit"
+        android:title="Grupo"
         app:showAsAction="ifRoom" />
 
 
